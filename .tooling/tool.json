@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "id": "commix",
+  "name": "Commix",
+  "hub_manifest": "https://github.com/nostalgia2812/.github/blob/claude/tooling-filing-system-uG7Gs/.tooling/tool_manifest.json",
+  "category": "web-application-testing",
+  "subcategory": "command-injection",
+  "description": "Automated All-in-One OS command injection and exploitation tool",
+  "language": "Python",
+  "license": "GPL-3.0",
+  "maintainer": "nostalgia2812",
+  "status": "active",
+  "priority": "high",
+  "install": {
+    "pip": "pip3 install commix",
+    "apt": "sudo apt-get install commix",
+    "source": "git clone https://github.com/nostalgia2812/commix.git"
+  },
+  "health_check": "commix --version 2>/dev/null || python3 commix.py --version",
+  "config_files": ["commix.conf"],
+  "ci_integration": ".github/workflows/tool-validation.yml",
+  "documentation": "https://github.com/nostalgia2812/.github/blob/claude/tooling-filing-system-uG7Gs/TOOLS_INDEX.md#commix",
+  "tags": ["command-injection", "os-injection", "web", "exploitation", "automated", "high"],
+  "related_tools": ["w3af", "beef"],
+  "integrations": ["burpsuite", "metasploit"],
+  "last_updated": "2026-03-20"
+}
