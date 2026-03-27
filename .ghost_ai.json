@@ -1,0 +1,19 @@
+{
+  "tool": "commix",
+  "ghost_ai_version": "1.0.0",
+  "category": "Injection Testing",
+  "description": "Automated command injection vulnerability exploitation for authorized security testing",
+  "invocation": {
+    "command": "commix",
+    "default_flags": ["--batch", "--output-dir", "/tmp/commix_ghost"],
+    "timeout_seconds": 120
+  },
+  "params": {
+    "url": "Target URL with injectable parameter, e.g. http://target/page?param=val"
+  },
+  "output": {
+    "format": "stdout",
+    "path": "/tmp/commix_ghost/"
+  },
+  "authorization_note": "Only use against targets you own or have explicit written authorization to test."
+}
